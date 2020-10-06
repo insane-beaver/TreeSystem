@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="96.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Testing">
+   <children>
+      <Label fx:id="question" layoutX="250.0" layoutY="33.0" text="Питання" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="result" layoutX="260.0" layoutY="43.0" text="result" visible="false" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="answer1" layoutX="66.0" layoutY="52.0" mnemonicParsing="false" selected="true" text="Answ1" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="40.0">
+         <toggleGroup>
+            <ToggleGroup fx:id="answers" />
+         </toggleGroup>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="answer2" layoutX="67.0" layoutY="79.0" mnemonicParsing="false" text="Answ2" toggleGroup="$answers" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="65.0">
+         <font>
+            <Font size="14.0" />
+         </font></RadioButton>
+      <Button fx:id="done" layoutX="488.0" layoutY="64.0" mnemonicParsing="false" onAction="#Done" prefHeight="26.0" prefWidth="97.0" text="Готово" AnchorPane.rightAnchor="14.399999999999977" AnchorPane.topAnchor="64.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="apk" name="SmartphoneBot">
+    <output-path>$PROJECT_DIR$/out/artifacts/SmartphoneBot</output-path>
+    <properties id="android-properties">
+      <options>
+        <option name="keyStoreUrl" value="file://" />
+      </options>
+    </properties>
+    <root id="archive" name="SmartphoneBot.apk">
+      <element id="archive" name="SmartphoneBot.jar">
+        <element id="module-output" name="SmartphoneBot" />
+      </element>
+    </root>
+  </artifact>
+</component>
